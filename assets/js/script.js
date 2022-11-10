@@ -11,7 +11,7 @@ var symbois = '~`!@#$%^&*()_-+={[}]|:;"<,>.?/';
 var length = parseInt(prompt('How many characters would you like for your password?'));
 while (length < 8 || length > 128) {
   length = parseInt(prompt('Please try again! Integer in 8 ~ 128'));
-} 1212
+}
 var hasLowers = confirm('Click OK to confirm including lowercase characters.');
 var hasUppers = confirm('Click OK to confirm including uppercase characters.');
 var hasNumbers = confirm('Click OK to confirm including numeric characters.');
