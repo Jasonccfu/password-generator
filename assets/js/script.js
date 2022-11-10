@@ -11,12 +11,17 @@ var symbois = '~`!@#$%^&*()_-+={[}]|:;"<,>.?/';
 var length = parseInt(prompt('How many characters would you like for your password?'));
 while (length < 8 || length > 128) {
   length = parseInt(prompt('Please try again! Integer in 8 ~ 128'));
-}
+} 1212
 var hasLowers = confirm('Click OK to confirm including lowercase characters.');
 var hasUppers = confirm('Click OK to confirm including uppercase characters.');
 var hasNumbers = confirm('Click OK to confirm including numeric characters.');
 var hasSymbois = confirm('Click OK to confirm including special characters.');
-
+while (false == (hasLowers || hasUppers || hasNumbers || hasSymbois)) {
+  var hasLowers = confirm('Please select at least one character type,Click OK to confirm including lowercase characters.');
+  var hasUppers = confirm('Please select at least one character type,Click OK to confirm including uppercase characters.');
+  var hasNumbers = confirm('Please select at least one character type,Click OK to confirm including numeric characters.');
+  var hasSymbois = confirm('Please select at least one character type,Click OK to confirm including special characters.');
+}
 
 function select(hasLowers, hasUppers, hasNumbers, hasSymbois) {
   let types = [];
